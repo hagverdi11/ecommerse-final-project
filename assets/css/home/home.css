@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar-area {
+  background-color: #F4F4F4;
+}
+#navbar-area .container .logo {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+#navbar-area .container .nav-center li {
+  margin-left: 20px;
+  font-size: 22px;
+}
+#navbar-area .container .nav-center li a {
+  color: #171700;
+}
+#navbar-area .container .nav-center li a:hover {
+  color: #65A3F2 !important;
+}
+#navbar-area .container .input-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#navbar-area .container .input-icon input {
+  width: 180px;
+  height: 37px;
+  right: 0;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #010A44;
+  position: absolute;
+  padding-left: 15px;
+  padding-bottom: 2px;
+  background-color: #F4F4F4;
+}
+#navbar-area .container .input-icon a {
+  position: absolute;
+  right: 20px;
+  color: black;
+}
+#navbar-area .container .input-icon a:hover {
+  color: #65A3F2 !important;
+  cursor: pointer;
+}
+#navbar-area .container .basket {
+  cursor: pointer;
+}
+#navbar-area .container .basket i {
+  font-size: 28px;
+  color: black;
+  margin-top: 13px;
+}
+#navbar-area .container .basket i:hover {
+  color: #65A3F2 !important;
+}
+#navbar-area .container .basket i sup {
+  font-size: small;
+  top: -20px;
+  right: 5px;
+}
+#navbar-area .container .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#navbar-area .container .dropdown:hover .dropdown-content {
+  display: block;
+}
+#navbar-area .container .dropdown .dropbtn {
+  color: rgb(84, 85, 93);
+  padding: 10px;
+  font-size: 15px;
+  height: 39px;
+  border: none;
+  cursor: pointer;
+  background-color: #F4F4F4;
+}
+#navbar-area .container .dropdown .dropbtn i {
+  font-size: 28px;
+  color: black;
+}
+#navbar-area .container .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F4F4F4;
+  min-width: 100px;
+  border-radius: 7px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+#navbar-area .container .dropdown .dropdown-content a {
+  color: black;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+}
+#navbar-area .container .dropdown .dropdown-content a:hover {
+  background-color: #65A3F2;
+}
+
+@media (max-width: 1200px) {
+  #navbar-area .input input {
+    width: 100px !important;
+  }
+  #navbar-area .input i {
+    font-size: 15px;
+    margin-right: -10px;
+  }
+  #navbar-area .logo {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  #navbar-area {
+    position: relative;
+  }
+  #navbar-area .input-icon {
+    float: left;
+    margin-left: 120px;
+  }
+  #navbar-area .input-icon input {
+    width: 100px !important;
+  }
+  #navbar-area .dropdown {
+    margin-top: 30px !important;
+  }
+  #navbar-area .basket {
+    margin-top: 15px;
+    margin-left: 20px;
+  }
+}
+.collapse a {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+#slider-area {
+  margin-top: 50px;
+}
+#slider-area .swiper {
+  width: 100%;
+  height: 700px;
+}
+#slider-area .swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#slider-area .swiper .swiper-slide .image {
+  width: 100%;
+  height: 100%;
+}
+#slider-area .swiper .swiper-slide .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  filter: brightness(0.5);
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#slider-area .swiper .swiper-slide .text {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 15%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+#slider-area .swiper .swiper-slide .text p {
+  color: white;
+  font-size: 30px;
+}
+#slider-area .swiper .swiper-slide .text h1 {
+  color: white;
+  font-size: 100px;
+}
+#slider-area .swiper .swiper-slide .text button {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 60px;
+  font-size: 29px;
+  font-weight: bold;
+}
+#slider-area .swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #b8acac;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "SHION";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+/*
+.card .imgBox img {
+    max-width: 100%;
+
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+
+}
+*/
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}/*# sourceMappingURL=home.css.map */
