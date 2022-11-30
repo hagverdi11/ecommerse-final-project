@@ -4,3 +4,13 @@ let swiper = new Swiper(".mySwiper",{
         delay:3000
     }
 })
+
+
+
+$('.buy').click(function(){
+    $('.bottom').addClass("clicked");
+  });
+  
+  $('.remove').click(function(){
+    $('.bottom').removeClass("clicked");
+  });
