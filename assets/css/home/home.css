@@ -683,34 +683,98 @@
   text-align: center;
 }
 
-.footers a {
-  color: #363030;
+#footer-company {
+  background-color: black;
+  width: 100%;
+  height: 321px;
 }
-
-.footers p {
-  color: #363030;
+#footer-company .container-fluid .images {
+  display: flex;
 }
-
-.footers ul {
-  line-height: 30px;
+#footer-company .container-fluid .images img {
+  width: 35px;
+  height: 29px;
 }
-
-#social-fb:hover {
-  color: #3B5998;
-  transition: all 0.001s;
+#footer-company .container-fluid .texts {
+  color: white;
+  font-size: 11px;
 }
-
-#social-tw:hover {
-  color: #4099FF;
-  transition: all 0.001s;
+#footer-company .container-fluid hr {
+  color: white;
 }
-
-#social-gp:hover {
-  color: #d34836;
-  transition: all 0.001s;
+#footer-company .container-fluid .about-c {
+  margin-top: 30px;
 }
-
-#social-em:hover {
-  color: #f39c12;
-  transition: all 0.001s;
+#footer-company .container-fluid .about-c h5 {
+  color: white;
+  font-size: 14px;
+}
+#footer-company .container-fluid .about-c p {
+  color: white;
+  font-size: 11px;
+  cursor: pointer;
+}
+#footer-company .container-fluid .about {
+  margin-top: 30px;
+}
+#footer-company .container-fluid .about h5 {
+  color: white;
+  font-size: 14px;
+}
+#footer-company .container-fluid .about p {
+  color: white;
+  font-size: 12px;
+  line-height: 8px;
+  cursor: pointer;
+}
+#footer-company .container-fluid .about p:hover {
+  color: red;
+}
+#footer-company .container-fluid .session {
+  margin-top: 30px;
+}
+#footer-company .container-fluid .session h5 {
+  color: white;
+  font-size: 14px;
+}
+#footer-company .container-fluid .session p {
+  color: white;
+  font-size: 12px;
+  line-height: 8px;
+  cursor: pointer;
+}
+#footer-company .container-fluid .session p:hover {
+  color: red;
+}
+#footer-company .container-fluid .categories {
+  margin-top: 30px;
+}
+#footer-company .container-fluid .categories h5 {
+  color: white;
+  font-size: 14px;
+}
+#footer-company .container-fluid .categories p {
+  color: white;
+  font-size: 12px;
+  line-height: 8px;
+  cursor: pointer;
+}
+#footer-company .container-fluid .categories p:hover {
+  color: red;
+}
+#footer-company .container-fluid .social {
+  margin-top: 30px;
+}
+#footer-company .container-fluid .social h5 {
+  color: white;
+  font-size: 14px;
+}
+#footer-company .container-fluid .social p {
+  color: white;
+  font-size: 12px;
+  line-height: 8px;
+  cursor: pointer;
+}
+#footer-company .container-fluid .social p:hover {
+  color: red;
 }/*# sourceMappingURL=home.css.map */
